@@ -16,7 +16,7 @@ export class CacheStorage {
     constructor(private readonly storage: BrowserStorage) {
     }
 
-    public get(key: string): ICacheEntry {
+    public get(key: string): ICacheEntry | undefined {
         return this.requestCache[key];
     }
 
